@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #max {
+            width: 300px;
+            max-width: 500px;
+            word-wrap: break-word;
+            text-align: left;
+        }
+
+        td {
+            text-align: center;
+        }
+        #data {
+            width: 750px;
+            border: 1px solid gray;
+        }
+
+        #submit {
+            cursor: pointer;
+            background-color: rgb(4, 120, 4);
+        }
+
+        #submit:hover {
+            background-color: rgb(10, 221, 10);
+        }
+
+        #list_data {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post" id="todo_data">
+        <input type="text" name="data" id="data" placeholder="Enter Data">
+        <input type="submit" id="submit">
+        <!-- <label for="short_data">short:</label> -->
+
+        <!-- <select id="short_data" onchange="handleShort()">
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+        </select> -->
+    </form>
+    <br><br>
+
+
+    <table border="1" id="list_data">
+
+    </table>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
